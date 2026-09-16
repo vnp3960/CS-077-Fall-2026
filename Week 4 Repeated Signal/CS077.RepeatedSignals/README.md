@@ -5,7 +5,11 @@ This raw starter deliberately opens a plain window. Build the UI and code using 
 ## My runner and Attention First connection
 
 ## Expected and observed tests
-
+PING;PING;DISTRESS;STOP;PING	3	STOP received; the last PING is ignored.
+STOP;PING	0	STOP first; no data packet processed.
+PING;DISTRESS;PING	3	End of batch; no STOP needed.
+(empty)	0	Empty batch; zero loop passes.
+A;B;C;D;E;F;G;H	6	Safety limit; G and H are not processed.
 ## AI question, change, test result and next step
 
 ## Whiteboard and course collaboration evidence
